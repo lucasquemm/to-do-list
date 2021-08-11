@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+div {
+}
+
+.principal {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 900px;
+  margin: 16px auto;
+  background-color: blueviolet;
+}
+
+.telaLista {
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+}
+
+.item-tarefa {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(115, 167, 143, 0.781);
+  margin: 32px 32px;
+  border-radius: 8px;
+}
+
+.titulo-item {
+  margin: 8px 0px;
+}
+
+.descricao-item {
+  margin: 8px 0px;
+}
+
+.prazo-item {
+  margin: 8px 0px;
+}
+
+.form {
+  background-color: bisque;
+  height: 100%;
+  width: 40%;
+}
+
+.formDiv {
+  margin: auto;
+}
