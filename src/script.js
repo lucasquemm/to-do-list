@@ -2,7 +2,7 @@ import { Tarefa } from './tarefa'
 
 let listaTarefas = []
 
-const telaLista = document.querySelector('.telaLista')
+const telaLista = document.querySelector('.painel-lista')
 const form = document.querySelector('#formTarefa')
 
 const recebeTitulo = document.querySelector('#recebeTitulo')

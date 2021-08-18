@@ -3,9 +3,6 @@
   margin: 0px;
 }
 
-div {
-}
-
 .principal {
   display: flex;
   flex-direction: row;
@@ -15,10 +12,16 @@ div {
   background-color: blueviolet;
 }
 
-.telaLista {
+.painel-lista {
   background-color: aqua;
   height: 100%;
   width: 100%;
+}
+
+.painel-form {
+  background-color: bisque;
+  height: 100%;
+  width: 40%;
 }
 
 .item-tarefa {
@@ -41,8 +44,9 @@ div {
   margin: 8px 0px;
 }
 
-.divForm {
-  background-color: bisque;
-  height: 100%;
-  width: 40%;
+.form-interno-div {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px;
+  background-color: aquamarine;
 }
