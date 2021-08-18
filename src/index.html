@@ -12,7 +12,7 @@
       <div class="painel-lista"></div>
       <div class="painel-form">
         <form id="formTarefa">
-          <div class="form-interno-div">
+          <div class="form-div">
             <label class="form-interno" for="titulo">Titulo:</label
             ><input
               class="form-interno"
@@ -23,7 +23,7 @@
               required
             />
           </div>
-          <div class="form-interno-div">
+          <div class="form-div">
             <label class="form-interno" for="descricao">Descricao:</label
             ><input
               class="form-interno"
@@ -34,7 +34,7 @@
               required
             />
           </div>
-          <div class="form-interno-div">
+          <div class="form-div">
             <label class="form-interno" for="prioridade">Prioridade:</label
             ><input
               class="form-interno"
@@ -47,14 +47,15 @@
               required
             />
           </div>
-          <div class="form-interno-div">
+          <div class="form-div">
             <button form="formTarefa" class="botoes" id="salvarBotao">
               Criar Tarefa
             </button>
           </div>
         </form>
-
-        <button id="trocaLista">Mudar Para Projetos</button>
+        <div class="form-div" id="projetos">
+          <button id="troca-lista">Mudar Para Projetos</button>
+        </div>
 
         <div class="edita-card"></div>
       </div>
