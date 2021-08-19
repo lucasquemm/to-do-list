@@ -12,7 +12,7 @@
       <div class="painel-lista"></div>
       <div class="painel-form">
         <form id="formTarefa">
-          <div class="form-div">
+          <div class="form-tarefa-div">
             <label class="form-interno" for="titulo">Titulo:</label
             ><input
               class="form-interno"
@@ -23,7 +23,7 @@
               required
             />
           </div>
-          <div class="form-div">
+          <div class="form-tarefa-div">
             <label class="form-interno" for="descricao">Descricao:</label
             ><input
               class="form-interno"
@@ -34,7 +34,7 @@
               required
             />
           </div>
-          <div class="form-div">
+          <div class="form-tarefa-div">
             <label class="form-interno" for="prioridade">Prioridade:</label
             ><input
               class="form-interno"
@@ -47,9 +47,51 @@
               required
             />
           </div>
-          <div class="form-div">
+          <div class="form-tarefa-div">
             <button form="formTarefa" class="botoes" id="salvarBotao">
               Criar Tarefa
+            </button>
+          </div>
+        </form>
+        <form class="" id="form-projeto">
+          <div class="form-projeto-div">
+            <label class="form-interno" for="titulo">Titulo:</label
+            ><input
+              class="form-interno"
+              id="recebe-titulo-projeto"
+              type="text"
+              name="titulo"
+              id="titulo"
+              required
+            />
+          </div>
+          <div class="form-projeto-div">
+            <label class="form-interno" for="descricao">Descricao:</label
+            ><input
+              class="form-interno"
+              id="recebe-descricao-projeto"
+              type="text"
+              name="descricao"
+              id="descricao"
+              required
+            />
+          </div>
+          <div class="form-projeto-div">
+            <label class="form-interno" for="prioridade">Prioridade:</label
+            ><input
+              class="form-interno"
+              id="recebe-prioridade-projeto"
+              type="range"
+              name="prioridade"
+              min="1"
+              max="3"
+              id="prioridade"
+              required
+            />
+          </div>
+          <div class="form-projeto-div">
+            <button form="form-projeto" class="botoes" id="salvarBotao">
+              Criar Projeto
             </button>
           </div>
         </form>

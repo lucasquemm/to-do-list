@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+body {
+  background-color: azure;
+}
+
 .principal {
   display: flex;
   flex-direction: row;
@@ -31,18 +35,30 @@
   margin: 32px;
   padding: 0px 8px;
   border-radius: 8px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.item-projeto {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(115, 167, 143, 0.781);
+  margin: 32px;
+  padding: 0px 8px;
+  border-radius: 0px;
+  border: 1px solid rgb(255, 255, 255);
 }
 
-.titulo-item {
-  margin: 8px 0px;
+.form-tarefa-div {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 8px;
+  background-color: aquamarine;
 }
 
-.descricao-item {
-  margin: 8px 0px;
-}
-
-.prazo-item {
-  margin: 8px 0px;
+.form-projeto-div {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 8px;
+  background-color: rgb(192, 175, 99);
 }
 
 .form-div {
@@ -50,4 +66,8 @@
   flex-direction: column;
   padding: 8px 8px;
   background-color: aquamarine;
+}
+
+.hidden {
+  display: none;
 }
