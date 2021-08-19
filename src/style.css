@@ -20,6 +20,7 @@ body {
   background-color: aqua;
   height: 100%;
   width: 100%;
+  overflow: auto;
 }
 
 .painel-form {
@@ -66,7 +67,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 8px 8px;
-  background-color: aquamarine;
+  background-color: bisque;
 }
 
 .hidden {

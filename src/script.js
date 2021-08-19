@@ -130,7 +130,7 @@ formTarefa.addEventListener('submit', function (e) {
     recebePrioridadeTarefa.value,
   )
   mostraTarefa()
-  console.log(listaTarefas)
+  formTarefa.reset()
 })
 
 formProjeto.addEventListener('submit', function (e) {
@@ -141,6 +141,7 @@ formProjeto.addEventListener('submit', function (e) {
     recebePrioridadeProjeto.value,
   )
   mostraProjeto()
+  formProjeto.reset()
 })
 
 mudaModoDeSalvar.addEventListener('click', function () {
