@@ -31,22 +31,38 @@ body {
 
 .item-tarefa {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: rgba(115, 167, 143, 0.781);
   margin: 32px;
-  padding: 0px 8px;
+  padding: 8px 8px;
   border-radius: 8px;
   border: 1px solid rgb(0, 0, 0);
 }
 
+.corpo-item-tarefa {
+  flex: 1;
+}
+
+.mod-item-tarefa {
+  flex: 0;
+}
+
 .item-projeto {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: rgba(115, 167, 143, 0.781);
   margin: 32px;
-  padding: 0px 8px;
+  padding: 8px 8px;
   border-radius: 0px;
   border: 1px solid rgb(255, 255, 255);
+}
+
+.corpo-item-projeto {
+  flex: 1;
+}
+
+.mod-item-projeto {
+  flex: 0;
 }
 
 .form-tarefa-div {
@@ -72,4 +88,18 @@ body {
 
 .hidden {
   display: none;
+}
+
+#prioridade-item-tarefa {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+#prioridade-item-projeto {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
 }
