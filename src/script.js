@@ -2,10 +2,12 @@ import { Tarefa } from './tarefa'
 import { Projeto } from './projeto'
 import './style.css'
 
-let listaTarefas = []
-let listaProjetos = []
+let listaDeTarefas = []
+let listaDeProjetos = []
 
 const telaLista = document.querySelector('.painel-lista')
+const listaProjetos = document.querySelector('.lista-projeto')
+const listaTarefas = document.querySelector('.lista-tarefa')
 const formTarefa = document.querySelector('#form-tarefa')
 const formProjeto = document.querySelector('#form-projeto')
 const recebeTituloTarefa = document.querySelector('#recebeTitulo')
@@ -23,21 +25,21 @@ const mudaModoDeSalvar = document.querySelector('#troca-lista')
 let modoProjeto = false
 
 const salvaTarefa = (titulo, descricao, prioridade) => {
-  listaTarefas.push(new Tarefa(titulo, descricao, prioridade))
+  listaDeTarefas.push(new Tarefa(titulo, descricao, prioridade))
 }
 
 const mostraTarefa = () => {
-  telaLista.innerHTML = ''
-  listaTarefas.forEach((tarefa) => criaTarefa(tarefa))
+  listaTarefas.innerHTML = ''
+  listaDeTarefas.forEach((tarefa) => criaTarefa(tarefa))
 }
 
 const salvaProjeto = (titulo, descricao, prioridade) => {
-  listaProjetos.push(new Projeto(titulo, descricao, prioridade))
+  listaDeProjetos.push(new Projeto(titulo, descricao, prioridade))
 }
 
 const mostraProjeto = () => {
-  telaLista.innerHTML = ''
-  listaProjetos.forEach((projeto) => criaProjeto(projeto))
+  listaProjetos.innerHTML = ''
+  listaDeProjetos.forEach((projeto) => criaProjeto(projeto))
 }
 
 const criaProjeto = (projeto) => {
@@ -72,7 +74,7 @@ const criaProjeto = (projeto) => {
 
   itemProjeto.style.borderRadius = '0px'
 
-  telaLista.appendChild(itemProjeto)
+  listaProjetos.appendChild(itemProjeto)
   itemProjeto.appendChild(itemCorpo)
   itemProjeto.appendChild(itemMod)
   itemCorpo.appendChild(tituloItem)
@@ -110,7 +112,7 @@ const criaTarefa = (tarefa) => {
     prioridadeItem.style.backgroundColor = 'rgba(10, 126, 0, 0.900)'
   }
 
-  telaLista.appendChild(itemTarefa)
+  listaTarefas.appendChild(itemTarefa)
   itemTarefa.appendChild(itemCorpo)
   itemTarefa.appendChild(itemMod)
   itemCorpo.appendChild(tituloItem)

@@ -17,10 +17,21 @@ body {
 }
 
 .painel-lista {
+  display: flex;
+  flex-direction: row;
   background-color: aqua;
   height: 100%;
   width: 100%;
   overflow: auto;
+}
+
+.lista-tarefa {
+  width: 50%;
+  background-color: orange;
+}
+.lista-projeto {
+  width: 50%;
+  background-color: purple;
 }
 
 .painel-form {
